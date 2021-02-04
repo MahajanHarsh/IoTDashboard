@@ -1,0 +1,43 @@
+
+
+<div class="container">
+
+<h4>Stall Occupancy</h4>
+
+  <table class="tab" >
+
+    <thead>
+
+        <tr>
+
+          <th>ID</th>
+
+          <th>Name</th>
+
+          <th>State</th>
+
+          <th>Last Updated</th>
+         
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let stall of stalls">
+
+        <td>{{ stall.id }}</td>
+
+        <td>{{ stall.name }}</td>
+
+        <td [ngClass]="stall.state == true ? 'ok':'alert' ">{{ stall.state }}</td>   
+
+        <td>{{ stall.lastUpdated }}</td>    
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="sidenav">
+  <div class="logo">
+    <h2><i>Preetson</i></h2>
+  </div>
+  <a (click)="toggleStallOcc();">Stall Occupancy</a>
+  <a (click)="toggleDispensor();">Dispensers</a>
+  <a (click)="toggleEnv();">Environment Monitoring</a>
+</div>
+
+<div class="main">
+  <div *ngIf="stallOccupancy">
+    <app-occupancy></app-occupancy>
+  </div>
+
+  <div *ngIf="dispensor">
+    <app-dispenser></app-dispenser>
+  </div>
+
+  <div *ngIf="envMonitor">
+    <app-env></app-env>
+  </div>
+</div>

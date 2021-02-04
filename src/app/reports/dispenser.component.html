@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="container">
+    <h2>Dispensers</h2>
+    {{this.response}}
+
+    <div class="" *ngFor="let dispenser of dispensers">
+      <div class="col-lg-3 box">
+        {{ dispenser.name }}<br />
+        <h2>{{ dispenser.level }}</h2>
+        <br />
+        Battery<br />
+        <progress id="file" value="{{dispenser.battery}}" max="100"> </progress>
+        {{dispenser.battery}}%<br />
+        {{ dispenser.lastUpdated }}<br />
+      </div>
+    </div>
+  </div>
+
+  <!-- <table class="tab">
+    <thead>
+      <tr>
+        <th>ID</th>
+
+        <th>Name</th>
+
+        <th>Level</th>
+
+        <th>Battery Level</th>
+
+        <th>Last Updated</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let dispenser of dispensers">
+        <td>{{ dispenser.id }}</td>
+
+        <td>{{ dispenser.name }}</td>
+
+        <td [ngClass]="dispenser.level <= 50 ? 'alert':'ok' ">
+          {{ dispenser.level }}
+        </td>
+
+        <td>
+          <progress id="file" value="{{dispenser.battery}}" max="100">
+          </progress>
+          {{dispenser.battery}}%
+        </td>
+
+        <td>{{ dispenser.lastUpdated }}</td>
+      </tr>
+    </tbody>
+  </table> -->
+</div>

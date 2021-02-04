@@ -1,0 +1,36 @@
+th {
+  color: white;
+  background-color: rgb(102, 102, 255);
+}
+
+td {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.tab {
+  font-size: 20px;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.alert {
+  background-color: pink;
+}
+
+.ok {
+  background-color: green;
+}
+
+.box {
+  font-size: 18px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
